@@ -1,0 +1,19 @@
+# GUI界面依赖包
+tkinter  # Python内置，通常不需要单独安装
+Pillow>=8.0.0  # 图像处理库，用于在GUI中显示图片
+
+# YOLO相关依赖（如果尚未安装）
+torch>=1.7.0
+torchvision>=0.8.0
+opencv-python>=4.5.0
+numpy>=1.19.0
+PyYAML>=5.3.1
+requests>=2.23.0
+tqdm>=4.41.0
+matplotlib>=3.2.2
+seaborn>=0.11.0
+scipy>=1.4.1
+
+# 可选依赖
+tensorboard>=2.4.1
+thop  # 用于计算FLOPs
