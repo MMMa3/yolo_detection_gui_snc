@@ -166,6 +166,3 @@ python build_exe.py
 ## 许可证
 
 本项目遵循原YOLO项目的许可证条款。
-
-## 默认视频流地址是SNC的工厂监控监听地址
-rtsp://admin:1qaz!QAZ@192.168.1.108:554
