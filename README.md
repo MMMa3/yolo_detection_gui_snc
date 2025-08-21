@@ -4,33 +4,28 @@
 
 ## 功能特性
 
-- 🖼️ **单张图片检测**: 选择单张图片进行目标检测
-- 📁 **批量图片检测**: 选择文件夹批量处理多张图片
-- 📹 **视频流检测**: 支持网络视频流实时检测
-- ⚙️ **参数调节**: 可调节置信度阈值和IOU阈值
-- 📊 **实时日志**: 显示处理过程和结果信息
-- 🎯 **结果可视化**: 在界面中直接显示检测结果
+- **单张图片检测**: 选择单张图片进行目标检测
+- **批量图片检测**: 选择文件夹批量处理多张图片
+- **视频流检测**: 支持网络视频流实时检测
+- **参数调节**: 可调节置信度阈值和IOU阈值
+- **实时日志**: 显示处理过程和结果信息
+- **结果可视化**: 在界面中直接显示检测结果
 
 ## 安装依赖
 
 ### 安装本体依赖
-#### 方法1: 使用pip安装
+#### 使用pip安装
 
 ```bash
 pip install -r requirements_gui.txt
 ```
-- requirements_gui.txt中设定的torch库是cpu版本，如果需要安装cuda版本可以访问PyTorch官网查看安装方法
-
-#### 方法2: 手动安装主要依赖
-
-```bash
-pip install Pillow torch torchvision opencv-python numpy
-```
+- requirements_gui.txt中设定的torch库是cpu版本，如果需要安装cuda版本可以访问PyTorch官网查看安装方法和对应版本
 
 ### 克隆yolov5库
 ```bash
 git clone https://github.com/ultralytics/yolov5
 ```
+
 克隆后应当先安装yolov5的依赖
 ```bash
 cd yolov5
@@ -79,10 +74,12 @@ python yolo_gui.py
 ```cmd
 pip install PyInstaller
 ```
+
 - 安装PyInstaller后可以在Console中输入
 ```cmd
 python build_exe.py
 ```
+
 来将脚本打包成exe文件
 - 打包后要将目录中的icon.ico图标手动拖进脚本打包目录中
 
@@ -116,6 +113,11 @@ python build_exe.py
 
 ### 模型格式
 - PyTorch模型文件（.pt）
+
+### 视频流URL格式
+- 应当为对应摄像头的RTSP推流地址，详情可搜索各大品牌的RTSP地址
+- 默认填入的是大华摄像头的RTSP推流地址
+- 注意网络连接和本机IP
 
 ## 注意事项
 
@@ -156,7 +158,7 @@ python build_exe.py
 
 ## 扩展功能
 
-可以根据需要添加以下功能：
+留待实现：
 - 实时摄像头检测
 - 检测结果统计分析
 - 自定义检测类别
@@ -165,4 +167,4 @@ python build_exe.py
 
 ## 许可证
 
-本项目遵循原YOLO项目的许可证条款。
+本项目遵循YOLOv5的许可证条款
